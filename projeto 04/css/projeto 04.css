@@ -1,0 +1,19 @@
+/* CONFIGURAÇÃO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "fonte 1";
+}
+
+html, body{
+    height: 100%;
+}
+
+@font-face {
+    font-family: "fonte 1";
+    src: url(../fonte/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+/* ------------ FIM CONFIGURAÇÃO ------------- */
+
