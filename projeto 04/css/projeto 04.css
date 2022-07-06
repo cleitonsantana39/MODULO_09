@@ -17,3 +17,49 @@ html, body{
 
 /* ------------ FIM CONFIGURAÇÃO ------------- */
 
+/* INÍCIO HEADER */
+header{
+    padding: 20px 2%;
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* menu */
+nav{
+    list-style-position: inside;
+    float: right;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    text-transform:uppercase;  /* maiúsculo */
+    font-size: 13px;
+    padding: 0 20px;
+}
+
+header a{
+    text-decoration: none;  /* retira sublinhado do link */
+    color: #b4b4b4;
+}
+
+/* marca */
+.logo{
+    float: left;
+    width: 236px;
+}
+
+/*------------------ FIM HEADER --------------------*/
+
+/* LIMPAR FLUTUAÇÃO */
+.clear{
+    clear: both;
+}
