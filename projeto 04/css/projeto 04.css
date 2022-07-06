@@ -59,6 +59,31 @@ header a{
 
 /*------------------ FIM HEADER --------------------*/
 
+/* INÍCIO SESSÃO MOSAICO */
+.mosaico{
+    background-color: blue; /* retirar */
+}
+
+
+.mosaico .container{
+    background-color: red; /* retirar */
+}
+
+.mosaico-single{
+    float: left;
+    width: calc(100% / 6);
+    background-color: rebeccapurple;
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid white;
+}
+
+/*----------------- FIM SESSÃO MOSAICO -------------------*/
+
 /* LIMPAR FLUTUAÇÃO */
 .clear{
     clear: both;
