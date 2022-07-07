@@ -126,6 +126,37 @@ header a{
     background-size: 18px 18px;
 }
 
+/* responsivo */
+@media screen and (max-width: 500px){
+
+    .servicos .container{
+        flex-direction: column;
+        top: 0;
+    }
+
+    /* caixa 01 */
+    .servicos .container .box-servico:nth-of-type(1){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    /* caixa 02 */
+    .servicos .container .box-servico:nth-of-type(2){
+        width: 90%;
+        max-width: 400px;
+        padding: 60px 2%;
+    }
+
+    /* caixa 03 */
+    .servicos .container .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+    
+} /* fim responsivo */
+
 /*-------------------- FIM SESSÃO SERVIÇOS -------------------*/
 
 /* INÍCIO SESSÃO PERFIL */
