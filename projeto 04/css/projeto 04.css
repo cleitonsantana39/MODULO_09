@@ -60,11 +60,6 @@ header a{
 /*------------------ FIM HEADER --------------------*/
 
 /* INÍCIO SESSÃO MOSAICO */
-
-.mosaico .container{
-    background-color: red; /* retirar */
-}
-
 .mosaico-single{
     float: left;
     width: calc(100% / 6);
@@ -124,7 +119,7 @@ header a{
     font-size: 12px;
 }
 
-.servicos .container .box-servico{  /* imagem do dente */
+.servicos .container .box-servico{         /* imagem do dente */
     background-image: url(../imagens/icone_dente.png);
     background-position: center calc(100% - 5px);
     background-repeat: no-repeat;
@@ -132,6 +127,54 @@ header a{
 }
 
 /*-------------------- FIM SESSÃO SERVIÇOS -------------------*/
+
+/* INÍCIO SESSÃO PERFIL */
+section.perfil .container{
+    max-width: 800px;
+    padding: 40px 0;
+}
+
+.perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+.perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center; 
+}
+
+.img-perfil{
+    background-image: url(../imagens/img_perfil.png);
+    width: 40%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+
+.texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+.texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+/*------------------- FIM SESSÃO PERFIL ----------------------*/
 
 /* LIMPAR FLUTUAÇÃO */
 .clear{
