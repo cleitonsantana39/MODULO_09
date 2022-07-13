@@ -22,14 +22,13 @@ header{
     padding: 20px 2%;
 }
 
-
 .container{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-/* menu */
+/* menu desktop */
 nav{
     list-style-position: inside;
     float: right;
@@ -51,11 +50,48 @@ header a{
     color: #b4b4b4;
 }
 
+/* menu mobile */
+nav.mobile{
+    display: none;
+}
+
 /* marca */
 .logo{
     float: left;
     width: 236px;
 }
+
+/* responsivo do header */
+@media screen and (max-width: 500px) {
+
+    header{
+        padding: 10px 2%;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    /* menu mobile */
+    nav.mobile{
+        width: 28px;
+        height: 28px;
+        background-image: url(../imagens/menu-mobile.png);
+        background-size: 100% 100%;
+        display:inline-block;
+        cursor: pointer;
+        top: -40px;
+        position: relative;
+    }
+
+    nav.mobile ul{
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* background-color:white; */
+    }
+
+} /* fim responsivo header */
 
 /*------------------ FIM HEADER --------------------*/
 
@@ -70,6 +106,16 @@ header a{
     padding-top: 100%;
     background-color: #ccc;
     border: 5px solid white;
+}
+
+/* responsivo sessão mosaico */
+@media screen and (max-width: 500px){
+
+    .img-mosaico-single{
+        top: -30px;
+        position: relative;
+    }
+    
 }
 
 /*----------------- FIM SESSÃO MOSAICO -------------------*/
@@ -185,7 +231,7 @@ section.perfil .container{
     width: 50%;
     height: 100%;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
+    background-size: 100% 100%;
 }
 
 .texto-perfil{
@@ -207,10 +253,16 @@ section.perfil .container{
 
 /* responsivo da sessão perfil */
 @media screen and (max-width: 500px){
+
+    .perfil-wraper{
+        padding-top: 0;
+    }
     
     .perfil-wraper2{
         display: inline-block;
         text-align: center;
+        position: static;
+        height: auto;
     }
 
     .img-perfil{
@@ -229,6 +281,12 @@ section.perfil .container{
 } /* fim responsivo */
 
 /*---------------- FIM SESSÃO PERFIL -------------------*/
+
+/* INÍCIO SESSÃO VÍDEOS */
+
+
+
+/*-------------------- FIM SESSÃO VÍDEOS ---------------*/
 
 /* LIMPAR FLUTUAÇÃO */
 .clear{
