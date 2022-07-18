@@ -299,6 +299,36 @@ section.perfil .container{
 
 /*-------------------- FIM SESSÃO VÍDEOS ---------------*/
 
+/* ABRE SESSÃO TRATAMENTOS */
+section.tratamentos h2{
+    text-align: center;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.tratamento-container{
+    float: left;
+    width: 33.3%;
+}
+
+.tratamento-single{
+    padding: 20px;
+}
+
+.tratamento-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+.tratamento-single p{
+    font-size: 13px;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+/*------------------FECHA SESSÃO TRATAMENTOS -------------*/
+
 /* LIMPAR FLUTUAÇÃO */
 .clear{
     clear: both;
