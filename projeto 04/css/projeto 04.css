@@ -290,12 +290,18 @@ section.perfil .container{
 .videos .box-video{
     float: left;
     width: 33.3%;
-    background-color: green; /* retirar */
     padding-top: calc(33.3% * 0.6);
-    border: 5px white solid;  /* retirar */
+    border: 5px white solid;
+    position: relative;
 }
 
-
+.box-video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
 
 /*-------------------- FIM SESSÃO VÍDEOS ---------------*/
 
