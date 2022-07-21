@@ -379,6 +379,8 @@ section.depoimentos .container{
 /*---------------- FECHA SESSÃO DEPOIMENTOS -----------*/
 
 /* ABRE SESSÃO SOCIAL */
+
+/* instagram */
 .instagram-chamada{
     float: left;
     width: 100%;
@@ -387,12 +389,13 @@ section.depoimentos .container{
     background-color: #98a5ae;
 }
 
-.instagram-chamada p{ /* parágrafo */
+.instagram-chamada p{  /* parágrafo */
     color: white;
     font-size: 13px;
     margin-top: 10px;
 }
 
+/* mosaico social */
 .mosaico-social{
     float: left;
     width: 100%;
@@ -404,6 +407,21 @@ section.depoimentos .container{
     width: calc(100% / 9);
     padding-top: calc(100% / 9);
     border: 3px black solid;
+}
+
+/* facebook */
+.facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #98a5ae;
+}
+
+.facebook-chamada p{  /* parágrafo */
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
 }
 
 /* responsivo sessão social 01 */
