@@ -376,29 +376,67 @@ section.depoimentos .container{
     color: #4b4b4b;
 }
 
-
-/* demarcações */
-section.depoimentos{
-    background-color: red;
-    width: 100%;
-    height: 50%;
-    padding: 5px;
-}
-
-.depoimentos .container{
-    background-color: yellow;
-}
-
-.depoimento-single{
-    background-color:green;
-    padding: 5px;
-}
-
-.nome-depoimento{
-    background-color: aqua;
-}
-
 /*---------------- FECHA SESSÃO DEPOIMENTOS -----------*/
+
+/* ABRE SESSÃO SOCIAL */
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #98a5ae;
+}
+
+.instagram-chamada p{ /* parágrafo */
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.mosaico-social{
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.img-mosaico-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    border: 3px black solid;
+}
+
+/* responsivo sessão social 01 */
+@media screen and (max-width: 900px){
+
+    .img-mosaico-social{
+        width: calc(100% /6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social div:nth-of-type(1n + 7){
+        display: none;
+    } 
+
+} /* fim responsivo sessão social 01  */
+
+
+/* responsivo sessão social 02 */
+@media screen and (max-width:768px){
+
+    .img-mosaico-social{
+        width: calc(100% /3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social div:nth-of-type(1n + 4){
+        display: none;
+    } 
+
+} /* fim responsivo sessão social 02 */
+
+/*-------------------- FECHA SESSÃO SOCIAL -------------*/
+
 
 /* LIMPAR FLUTUAÇÃO */
 .clear{
