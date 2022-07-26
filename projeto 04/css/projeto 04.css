@@ -455,6 +455,101 @@ section.depoimentos .container{
 
 /*-------------------- FECHA SESSÃO SOCIAL -------------*/
 
+/* ABRE SESSÃO CONTATO */
+
+section.contato{
+    background-color: #4b4b4b; /* retirar */
+    padding: 60px 2%;
+}
+
+section.contato > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.contato form{ 
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+.pessoal{
+    padding: 0 2%;
+}
+
+.form-wraper-w50 span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+/* campo nome */
+.form-wraper-w50 input[type=text]{ 
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+}
+
+/* campo email */
+.form-wraper-w50 input[type=email]{ 
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+}
+
+/* campo telefone */
+.form-wraper-w50 input[type=tel]{ 
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+}
+
+/* campo de mensagem */
+.mensagem textarea{
+    width: 100%;
+    padding: 15px;
+    height: 121px;
+    resize: none;
+}
+
+/* nome do campo de mensagem */
+.mensagem span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+/* botão enviar */
+.w100{
+    text-align: center;
+    padding: 5px;
+}
+
+.w100 input[type=submit]{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #698293;
+    font-size: 18px;
+    color: white;
+}
+
+legend{
+    margin-left: 15px;
+    padding: 0 5px  
+}
+
+span{ 
+    display: block;
+}
+
+/*------------------- FECHA SESSÃO CONTATO --------------*/
+
 
 /* LIMPAR FLUTUAÇÃO */
 .clear{
