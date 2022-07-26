@@ -458,7 +458,6 @@ section.depoimentos .container{
 /* ABRE SESSÃO CONTATO */
 
 section.contato{
-    background-color: #4b4b4b; /* retirar */
     padding: 60px 2%;
 }
 
@@ -550,6 +549,37 @@ span{
 
 /*------------------- FECHA SESSÃO CONTATO --------------*/
 
+/* ABRE RODAPÉ */
+footer{
+    text-align: center;
+    padding: 40px 0;
+    background-color: #698293;
+}
+
+.footer-block{
+    display: inline-block;
+    text-align: center;
+    width: 33.3%;
+    margin-right: -4px;
+}
+
+.telefone{
+    vertical-align: top;
+}
+
+/* responsivo rodapé */
+@media screen and (max-width:500px){
+    .footer-block{
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        overflow: hidden;
+
+    }
+    
+}
+
+/*------------------ FECHA RODAPÉ -----------------------*/
 
 /* LIMPAR FLUTUAÇÃO */
 .clear{
