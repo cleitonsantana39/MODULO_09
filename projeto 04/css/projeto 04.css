@@ -1,0 +1,586 @@
+/* CONFIGURAÇÃO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "fonte 1";
+}
+
+html, body{
+    height: 100%;
+}
+
+@font-face {
+    font-family: "fonte 1";
+    src: url(../fonte/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+/* ------------ FIM CONFIGURAÇÃO ------------- */
+
+/* INÍCIO HEADER */
+header{
+    padding: 20px 2%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* menu desktop */
+nav{
+    list-style-position: inside;
+    float: right;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    text-transform:uppercase;  /* maiúsculo */
+    font-size: 13px;
+    padding: 0 20px;
+}
+
+header a{
+    text-decoration: none;  /* retira sublinhado do link */
+    color: #b4b4b4;
+}
+
+/* menu mobile */
+nav.mobile{
+    display: none;
+}
+
+/* marca */
+.logo{
+    float: left;
+    width: 236px;
+}
+
+/* responsivo do header */
+@media screen and (max-width: 500px) {
+
+    header{
+        padding: 10px 2%;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    /* menu mobile */
+    nav.mobile{
+        width: 28px;
+        height: 28px;
+        background-image: url(../imagens/menu-mobile.png);
+        background-size: 100% 100%;
+        display:inline-block;
+        cursor: pointer;
+        top: -40px;
+        position: relative;
+    }
+
+    nav.mobile ul{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+} /* fim responsivo header */
+
+/*------------------ FIM HEADER --------------------*/
+
+/* INÍCIO SESSÃO MOSAICO */
+.mosaico-single{
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid white;
+}
+
+/* responsivo sessão mosaico */
+@media screen and (max-width: 500px){
+
+    .img-mosaico-single{
+        top: -30px;
+        position: relative;
+    }
+    
+}
+
+/*----------------- FIM SESSÃO MOSAICO -------------------*/
+
+/* INÍCIO SESSÃO SERVIÇOS */
+.servicos .container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    top: -40px;
+    position: relative;
+    text-align: center;
+}
+
+/* caixa 01 */
+.servicos .container .box-servico:nth-of-type(1){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+/* caixa 02 */
+.servicos .container .box-servico:nth-of-type(2){
+    width: 40%;
+    padding: 60px 2%;
+    background-color: #698293;
+    background-image: none;
+}
+
+/* caixa 03 */
+.servicos .container .box-servico:nth-of-type(3){
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+.servicos .container .box-servico h2{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.servicos .container .box-servico p{
+    color: white;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.servicos .container .box-servico{   /* imagem do dente */
+    background-image: url(../imagens/icone_dente.png);
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+
+/* responsivo */
+@media screen and (max-width: 500px){
+
+    .servicos .container{
+        flex-direction: column;
+        top: 0;
+    }
+
+    /* caixa 01 */
+    .servicos .container .box-servico:nth-of-type(1){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    /* caixa 02 */
+    .servicos .container .box-servico:nth-of-type(2){
+        width: 90%;
+        max-width: 400px;
+        padding: 60px 2%;
+    }
+
+    /* caixa 03 */
+    .servicos .container .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+    
+} /* fim responsivo */
+
+/*----------------- FIM SESSÃO SERVIÇOS -----------------*/
+
+/* INÍCIO SESSÃO PERFIL */
+section.perfil .container{
+    max-width: 800px;
+    padding: 40px 0;
+}
+
+.perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+.perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center; 
+}
+
+.img-perfil{
+    background-image: url(../imagens/img_perfil.png);
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+
+.texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+.texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+/* responsivo da sessão perfil */
+@media screen and (max-width: 500px){
+
+    .perfil-wraper{
+        padding-top: 0;
+    }
+    
+    .perfil-wraper2{
+        display: inline-block;
+        text-align: center;
+        position: static;
+        height: auto;
+    }
+
+    .img-perfil{
+        width: 80%;
+        display: inline-block; /* centralizou a imagem */
+        padding-top: 100%;
+        height: auto;
+    }
+
+    .texto-perfil{
+        width: 80%;
+        display: inline-block; /* centralizou o texto */
+        padding: 0 30px;
+    }
+
+} /* fim responsivo */
+
+/*---------------- FIM SESSÃO PERFIL -------------------*/
+
+/* INÍCIO SESSÃO VÍDEOS */
+.videos{
+    padding: 50px 0;
+}
+
+.videos .box-video{
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    border: 5px white solid;
+    position: relative;
+}
+
+.box-video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/*-------------------- FIM SESSÃO VÍDEOS ---------------*/
+
+/* ABRE SESSÃO TRATAMENTOS */
+section.tratamentos h2{
+    text-align: center;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.tratamento-container{
+    float: left;
+    width: 33.3%;
+}
+
+.tratamento-single{
+    padding: 20px;
+}
+
+.tratamento-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+.tratamento-single p{
+    font-size: 13px;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+/*------------------FECHA SESSÃO TRATAMENTOS -------------*/
+
+/* ABRE SESSÃO DEPOIMENTOS */
+section.depoimentos > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.depoimentos .container{
+    padding: 70px 0;
+    max-width: 400px;
+}
+
+.depoimento-single{
+    text-align: center;
+}
+
+/* citação */
+.depoimento-single q{
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+.nome-depoimento{
+    padding: 8px 0;
+}
+
+/* foto */
+.nome-depoimento img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+/* nome debaixo da foto */
+.nome-depoimento span{
+    display: block;
+    font-size: 13px;
+    color: #4b4b4b;
+}
+
+/*---------------- FECHA SESSÃO DEPOIMENTOS -----------*/
+
+/* ABRE SESSÃO SOCIAL */
+
+/* instagram */
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #98a5ae;
+}
+
+.instagram-chamada p{  /* parágrafo */
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* mosaico social */
+.mosaico-social{
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.img-mosaico-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    border: 3px black solid;
+}
+
+/* facebook */
+.facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #98a5ae;
+}
+
+.facebook-chamada p{  /* parágrafo */
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* responsivo sessão social 01 */
+@media screen and (max-width: 900px){
+
+    .img-mosaico-social{
+        width: calc(100% /6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social div:nth-of-type(1n + 7){
+        display: none;
+    } 
+
+} /* fim responsivo sessão social 01  */
+
+
+/* responsivo sessão social 02 */
+@media screen and (max-width:768px){
+
+    .img-mosaico-social{
+        width: calc(100% /3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social div:nth-of-type(1n + 4){
+        display: none;
+    } 
+
+} /* fim responsivo sessão social 02 */
+
+/*-------------------- FECHA SESSÃO SOCIAL -------------*/
+
+/* ABRE SESSÃO CONTATO */
+
+section.contato{
+    padding: 60px 2%;
+}
+
+section.contato > h2{
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.contato form{ 
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+.pessoal{
+    padding: 0 2%;
+}
+
+.form-wraper-w50 span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+/* campo nome */
+.form-wraper-w50 input[type=text]{ 
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+}
+
+/* campo email */
+.form-wraper-w50 input[type=email]{ 
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+}
+
+/* campo telefone */
+.form-wraper-w50 input[type=tel]{ 
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+}
+
+/* campo de mensagem */
+.mensagem textarea{
+    width: 100%;
+    padding: 15px;
+    height: 121px;
+    resize: none;
+}
+
+/* nome do campo de mensagem */
+.mensagem span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+/* botão enviar */
+.w100{
+    text-align: center;
+    padding: 5px;
+}
+
+.w100 input[type=submit]{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #698293;
+    font-size: 18px;
+    color: white;
+}
+
+legend{
+    margin-left: 15px;
+    padding: 0 5px  
+}
+
+span{ 
+    display: block;
+}
+
+/*------------------- FECHA SESSÃO CONTATO --------------*/
+
+/* ABRE RODAPÉ */
+footer{
+    text-align: center;
+    padding: 40px 0;
+    background-color: #698293;
+}
+
+.footer-block{
+    display: inline-block;
+    text-align: center;
+    width: 33.3%;
+    margin-right: -4px;
+}
+
+.telefone{
+    vertical-align: top;
+}
+
+/* responsivo rodapé */
+@media screen and (max-width:500px){
+    .footer-block{
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        overflow: hidden;
+
+    }
+    
+} /* fim responsivo rodapé */
+
+/*------------------ FECHA RODAPÉ -----------------------*/
+
+/* LIMPAR FLUTUAÇÃO */
+.clear{
+    clear: both;
+}
